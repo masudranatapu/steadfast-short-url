@@ -20,13 +20,14 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+// dashboard
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+// redirect
 Route::get('redirect-url', [ShortUrlController::class, 'redirectUrl'])->name('url.redirect');
-
+//
 Route::middleware(['auth'])->group(function () {
     Route::get('short-url-list', [ShortUrlController::class, 'index'])->name('shortUrl');
     Route::post('shorten', [ShortUrlController::class, 'store'])->name('shortUrl.store');
     Route::get('delete/{id}', [ShortUrlController::class, 'delete'])->name('shortUrl.delete');
 });
+//
