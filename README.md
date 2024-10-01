@@ -1,6 +1,6 @@
 ## Laravel Project
 
-A simple long url redirect with short url. This boilerplate uses the following tools:
+A simple long url redirect with short url:
 
 ## How To Use
 
