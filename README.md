@@ -7,7 +7,7 @@ A simple long url redirect with short url. This boilerplate uses the following t
 #### Clone the repository
 
 ```bash
-git clone https://github.com/nahidhtamim/gasstationsolution.git
+git clone https://github.com/masudranatapu/steadfast-short-url.git
 ```
 
 #### Copy .env.example file to .env and edit credentials also set app url
@@ -15,7 +15,7 @@ git clone https://github.com/nahidhtamim/gasstationsolution.git
 #### Install Via Composer
 
 ```bash
-composer install
+composer install or composer install --ignore-platform-reqs
 ```
 
 #### Generate Application Key
@@ -51,15 +51,9 @@ php artisan migrate:fresh --seed
 #### Install Node Dependencies
 
 ```bash
-npm install or yarn install
+npm install
 
-npm run dev or yarn dev
-```
-
-#### Production
-
-```bash
-npm run build or yarn build
+npm run dev
 ```
 
 #### Login Dashboard
